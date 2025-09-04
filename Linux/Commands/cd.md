@@ -24,7 +24,8 @@
 
 ---
 
-## Examples
+## Examples<img width="1772" height="848" alt="Screenshot from 2025-09-04 09-05-11" src="https://github.com/user-attachments/assets/0976a19f-1355-483f-8c36-86c2b7c281f3" />
+
 
 ### Setup
 
@@ -38,5 +39,6 @@ ln -s real1 mylink
 
 # Save current directory
 echo "HOME_DIR=$(pwd)" > setup_env.sh
+
 
 
