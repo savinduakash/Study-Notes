@@ -26,13 +26,17 @@
 
 ## Examples
 
-# Create a sandbox directory
+### Setup
+
+#### Create a sandbox directory
+``` bash
 mkdir -p ~/cd_lab/{real1,real2}
 cd ~/cd_lab
-
-# Create symbolic link
+```
+## Create symbolic link
 ln -s real1 mylink
 
 # Save current directory
 echo "HOME_DIR=$(pwd)" > setup_env.sh
+
 
