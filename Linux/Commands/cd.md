@@ -1,22 +1,5 @@
 # Linux Command Learning Package: `cd`
 
-A complete guide to the Linux `cd` command with **options, examples, lab practice, and tips**.
-
----
-
-## Table of Contents
-
-1. [Overview](#overview)
-2. [Options](#options)
-3. [Examples](#examples)
-4. [Lab Worksheet](#lab-worksheet)
-    - [Setup](#setup)
-    - [Command-Line Practice](#command-line-practice)
-    - [Interactive Practice](#interactive-practice)
-    - [Cleanup](#cleanup)
-5. [Task Submission](#task-submission)
-6. [Summary](#summary)
-7. [Tips & Tricks](#tips--tricks)
 
 ---
 
@@ -43,9 +26,13 @@ A complete guide to the Linux `cd` command with **options, examples, lab practic
 
 ## Examples
 
-### 1. cd -L (logical)
-```bash
-ln -s /usr /tmp/linktousr
-cd -L /tmp/linktousr
-pwd
-# Output: /tmp/linktousr
+# Create a sandbox directory
+mkdir -p ~/cd_lab/{real1,real2}
+cd ~/cd_lab
+
+# Create symbolic link
+ln -s real1 mylink
+
+# Save current directory
+echo "HOME_DIR=$(pwd)" > setup_env.sh
+
