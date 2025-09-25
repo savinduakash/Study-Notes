@@ -52,4 +52,3 @@ cat hardlink.txt       # Output: Hello World
 ```
 
 
-<img width="961" height="601" alt="hardlink-softlink" src="https://github.com/user-attachments/assets/e1ad3707-82ae-4690-b73c-42bcc5710cd8" />
