@@ -29,3 +29,27 @@ ln file.txt hardlink.txt
 ```
 ls -li file.txt hardlink.txt
 ```
+# Create an original file
+```
+echo "Hello World" > original.txt
+```
+# Create a hard link to the original file
+```
+ln original.txt hardlink.txt
+```
+# View the contents of both files
+```
+cat original.txt       # Output: Hello World
+cat hardlink.txt       # Output: Hello World
+```
+# Delete the original file
+```
+rm original.txt
+```
+# Hard link still retains data
+```
+cat hardlink.txt       # Output: Hello World
+```
+
+
+<img width="961" height="601" alt="hardlink-softlink" src="https://github.com/user-attachments/assets/e1ad3707-82ae-4690-b73c-42bcc5710cd8" />
